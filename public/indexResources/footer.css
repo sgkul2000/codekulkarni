@@ -1,0 +1,135 @@
+section.footer{
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  padding: 3rem 0 1.5rem 0;
+}
+.collabCardWrapper{
+  /* padding:2rem; */
+  position: absolute;
+  top: -60px;
+  left: 15px;
+  width: 100vw;
+}
+.collabCardWrapper .col-12{
+  padding-left: 7px;
+}
+.collabCard{
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding:2rem;
+  margin:auto 0;
+  box-shadow: 0 4px 22px rgba(0,0,0,0.4);
+
+}
+.collabText{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.collabBtn{
+  border-radius: 35px;
+  color: #fff;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(270deg, #ff8008, #ffc837);
+  background-size: 400% 400%;
+
+}
+.collabBtn:hover{
+  text-decoration: none;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+.socialIconWrapper{
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid #333;
+  color: white;
+  margin: auto 0.7rem;
+  transition:all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.socialIconWrapper:hover{
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.fab, .far, .fas{
+  transition: all 0.2s ease;
+}
+.socialIconWrapper:hover .fab,.socialIconWrapper:hover .far, .socialIconWrapper:hover .fas{
+}
+.socialIconWrapper:hover .fa-twitter{
+  color: #00acee;
+}
+.socialIconWrapper:hover .fa-instagram{
+  color:#c13584;
+}
+.socialIconWrapper:hover .fa-linkedin-in{
+  color:#0e76a8 ;
+}
+.socialIconWrapper:hover .fa-github{
+  color:#211F1F;
+}
+.socialIconWrapper:hover .fa-envelope{
+  color:#B23121;
+}
+.heart{
+  color: #a98ed6;
+  font-size: 2rem;
+  margin: 0 0.3rem 0.3rem 0.3rem;
+}
+@media only screen and (max-width:576px){
+  .collabText, collabBtn{
+    font-size: 1rem;
+  }
+  .collabText{
+    padding-bottom: 1rem;
+  }
+  .footerHeader{
+    padding: 6rem 0 0 0;
+  }
+}
+.css-selector {
+    background: linear-gradient(270deg, #ff8008, #ffc837);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}

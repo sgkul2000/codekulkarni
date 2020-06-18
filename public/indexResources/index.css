@@ -1,0 +1,297 @@
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+*{
+  scroll-behavior: smooth;
+}
+.blackText, .whiteText{
+  /* opacity: 0.35; */
+}
+.blackText{
+  /* color: rgba(0,0,0,0.4); */
+  color: rgba(0,0,0,1);
+}
+.whiteText{
+  /* color:rgba(255,255,255,0.4); */
+  color:rgba(255,255,255,1);
+}
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+#vueMain{
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background-color: transparent;
+    border:1px solid #000;
+    mix-blend-mode: difference;
+    margin: 1rem 10rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  mix-blend-mode: difference;
+  outline: 1px solid slategrey;
+  background: linear-gradient(270deg, #ff8008, #ffc837);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  -o-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+body::-webkit-scrollbar-button{
+  display: none;
+}
+.css-selector {
+    background: linear-gradient(270deg, #ff8008, #ffc837);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+.dot{
+  font-size: 150%;
+  background: -webkit-linear-gradient(#ff8008, #ffc837);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.exclamatory{
+  font-size: 100%;
+}
+.flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section{
+  padding:1.5rem 0;
+}
+
+.landingRect{
+  /* height: 100vh; */
+  height: calc(100vh - 56px);
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  font-size: 2rem;
+}
+.landing{
+  margin-top: 64px;
+}
+.landingRectBg{
+  height: 100vh;
+  width: 100%;
+  background-image: url('./images/stars.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: grayscale();
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center
+}
+#bgImg{
+  height: 150%;
+}
+#videoBg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.name{
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  word-spacing: 2rem;
+  text-transform: capitalize;
+}
+.desc{
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.arrowWrapper{
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 100px;
+}
+/* .arrowLeft{
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin:100% 50% 0;
+}
+.arrowRight{
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin:0 50% 0;
+  transform: translateX(40px);
+} */
+.arrowLeft{
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transform-origin:100% 50% 0;
+  transform: rotate(0deg);
+  animation: leftArrowAnimation 2s linear 2s infinite normal;
+
+}
+.arrowRight{
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  transform-origin:0 50% 0;
+  transform: translateX(40px) rotate(0deg);
+  animation: rightArrowAnimation 2s linear 2s infinite normal;
+}
+@keyframes leftArrowAnimation{
+  0%{
+    transform: rotate(0deg);
+    bottom: 0;
+  }
+  7%{
+    transform: rotate(-40);
+    bottom: 10px;
+  }
+  15%{
+    transform: rotate(-35deg);
+    bottom: 20px;
+  }
+  30%{
+    transform: rotate(-25deg);
+    bottom: 40px;
+  }
+  60%,80%,100%{
+    transform: rotate(0deg);
+    bottom: 0;
+  }
+}
+@keyframes rightArrowAnimation{
+  0%{
+    transform: translateX(40px) rotate(0deg);
+    bottom: 0;
+  }
+  7%{
+    transform: translateX(40px) rotate(40);
+    bottom: 10px;
+  }
+  15%{
+    transform: translateX(40px) rotate(35deg);
+    bottom: 20px;
+  }
+  30%{
+    transform: translateX(40px) rotate(25deg);
+    bottom: 40px;
+  }
+  60%,80%,100%{
+    transform: translateX(40px) rotate(0deg);
+    bottom: 0;
+  }
+}
+
+section.profile{
+  background-color: #fff;
+  padding: 3rem 1rem;
+
+
+}
+.stRef{
+}
+div.aboutMe a:hover{
+  color:#000;
+  text-decoration: none;
+}
+.sectionHeader{
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+  margin-top: 0;
+}
+.profileImg img{
+  margin: 2rem auto;
+}
+@media only screen and (max-width:576px){
+  .sectionHeader{
+    padding: 3rem 0 3rem 0;
+  }
+  section{
+    padding:1rem 0;
+  }
+  .profileImg img{
+    margin: 0 auto 2rem auto;
+  }
+  .lContent{
+    transform: translateY(-10%);
+  }
+}
+@media only screen and (max-width:430px){
+  .name{
+    font-size: 2rem;
+  }
+  .desc{
+    font-size: 1rem;
+  }
+}

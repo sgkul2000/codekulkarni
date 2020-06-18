@@ -1,0 +1,108 @@
+.skillName::-moz-selection,  {
+  /* Code for Firefox */
+  color: #000;
+  background: #fff;
+}
+
+.skillName::selection {
+  color: #000;
+  background: #fff;
+}
+
+section.skills {
+  background-color: #000;
+  /* color: #fff; */
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.progressBar {
+  height: 15px;
+  width: 150px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  overflow-x: hidden;
+  z-index: 1;
+  background: #FF8008;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC837, #FF8008);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.shrinker, .animationShrinker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 15px;
+  width: 50%;
+  z-index: 2;
+  background-color: #555;
+}
+.animationShrinker{
+  z-index: 3;
+}
+.resumeBtn {
+  height: 3rem;
+  width: 20vw;
+  z-index: 100;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  position: relative;
+  /* content: "Download Resume"; */
+  mix-blend-mode: difference;
+  /* color: #fff; */
+  font-weight: 600;
+  margin: auto;
+}
+
+.resumeBtn .resumeText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: difference;
+  /* color: #fff; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.resumeBtn .bgChange {
+  /* content: "Download Resume"; */
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.resumeBtn:hover .bgChange {
+  width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+  .resumeBtn {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .skillsWrapper {
+    max-width: 80vw;
+  }
+}

@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/indexResources/index.css">
+<script src="/indexResources/index.js" charset="utf-8"></script>
+{{>navbar}}
+<div id="vueMain" class="mainIndexWrapper">
+  <div id="home" class="landing">
+    <div class="landingRectBg">
+      {{!-- <video id="videoBg" src="/indexResources/images/galaxyVideo.mp4" autoplay muted loop> --}}
+      <img src="/indexResources/images/stars.jpg" id="bgImg" alt="">
+      </video>
+    </div>
+    <div class="landingRect">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-md-12 flex-Center h-100">
+            <div class="lContent h-100 flexCenter flex-column text-left">
+              {{!-- <div class="profileImg">
+                <img height="90px" src="/indexResources/images/profile.svg" alt="profile photo">
+              </div> --}}
+              <div class="name w-30 w-md-50">
+                <span>kulkarni</span><span class="dot">.</span><span>shreesh</span>
+              </div>
+              <p class="desc w-30 w-md-50">A Tech savvy and a full stack web developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrowWrapper">
+        <div class="arrowLeft">
+
+        </div>
+        <div class="arrowRight">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>profile}}
+  {{>skills}}
+  {{>projects}}
+  {{>experience}}
+  {{>footer}}
+</div>
+<script src="/indexResources/indexAnimations.js" charset="utf-8"></script>
+<script type="text/javascript">
+  const app = new Vue({
+    el: "#vueMain",
+    delimiters: ['[[', ']]'],
+    data: {
+      message: "Hello Shreesh"
+    },
+    created() {}
+  })
+</script>

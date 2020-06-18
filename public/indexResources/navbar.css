@@ -1,0 +1,81 @@
+.navbar{
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter:blur(7px);
+}
+.dropdown-menu{
+  background-color: transparent;
+  padding: 0 !important;
+}
+a.dropdown-item:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+a.dropdown-item.active{
+  color: #fff;
+  background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+a.navbar-brand{
+  font-weight: 600;
+}
+button.navbar-toggler{
+  border:none;
+  outline:none;
+  box-shadow: none;
+  height: 30px;
+  width: 30px;
+  margin-right: 1rem;
+}
+button.navbar-toggler div.navLinesWrapper{
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  top: 20px;
+}
+button.navbar-toggler div.navLinesWrapper div.navLine{
+  width: 30px;
+  height: 2px;
+  color: #000;
+  position: absolute;
+  left: 0;
+  background-color: #000;
+  transform-origin: 53% 50% 0;
+}
+button.navbar-toggler div.navLinesWrapper div.navLine1{
+  top: 20%;
+}
+button.navbar-toggler div.navLinesWrapper div.navLine2{
+  bottom: 20%;
+}
+.nav-link{
+  opacity: 1;
+}
+
+.navbar,
+.navbar .navbar-brand,
+.navbar .collapse.navbar-collapse .navbar-nav .nav-item .nav-link,
+.navbar .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+  transition: all 0.3s ease;
+}
+
+.transNav{
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter:blur(7px);
+
+}
+.transNav .navbar-brand{
+  color: #fff;
+}
+.transNav button.navbar-toggler .navLinesWrapper .navLine{
+  background-color: #fff
+}
+.transNav .collapse.navbar-collapse .navbar-nav .nav-item .nav-link,
+.transNav .collapse.navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+  color:#fff;
+}
+@media only screen and (max-width:768px){
+  .nav-link{
+    opacity:0;
+  }
+}

@@ -1,0 +1,25 @@
+section.experience{
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 10rem;
+}
+.experienceCard{
+  border-radius: 5px;
+  box-shadow: 0 4px 22px rgba(202, 202, 202, 0.7);
+  background-color: #000;
+  color: #fff;
+}
+.fa-code{
+  font-size: 4rem;
+}
+.position{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.companyName a small:hover{
+  text-decoration: underline;
+}
+.companyName a{
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,141 @@
+
+.css-selector {
+    background: linear-gradient(270deg, #ff8008, #ffc837);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+
+section.projects{
+  background-color: #fff;
+}
+.project{
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  /* color: #fff; */
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 4px 22px rgba(202, 202, 202, 0.7);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto 1rem;
+  transition: background-size 0.5s ease;
+-moz-transition: background-size 0.5s ease;
+-ms-transition: background-size 0.5s ease;
+-o-transition: background-size 0.5s ease;
+-webkit-transition: background-size 0.5s ease;
+}
+.project.project1{
+  background-image: url('./images/tunein.png');
+}
+.project.project2{
+  background-image: url('./images/giflab.png');
+}
+.project.project3{
+  background-image: url('./images/passport.png');
+}
+.project .projectInner{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.project .projectInner .innerWrapper{
+  margin: auto  1rem;
+}
+.project .projectInner .innerWrapper .projectTitle{
+  transform: translateX(300%);
+  font-size: 1.3rem;
+  transition: all 0.2s ease;
+}
+.project .projectInner .innerWrapper .projectDesc{
+  transform: translateX(300%);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+.project:hover{
+  /* background-size: auto 120%; */
+}
+.project:hover .projectInner{
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(270deg, rgb(255, 128, 8, 0.8), rgb(255, 200, 55, 0.8));
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  -o-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+.project:hover .projectInner .innerWrapper .projectTitle{
+  transform: translateX(0);
+}
+.project:hover .projectInner .innerWrapper .projectDesc{
+  transform: translateX(0);
+}
+
+
+@media only screen and (max-width:992px){
+  .project{
+    height:20vw;
+  }
+  .project .projectInner .innerWrapper .projectTitle{
+    transform: translateX(0);
+  }
+  .project .projectInner .innerWrapper .projectDesc{
+    transform: translateX(0);
+  }
+  .project .projectInner{
+    background: linear-gradient(270deg, rgb(255, 128, 8, 0.9), rgb(255, 200, 55, 0.9));
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+  }
+
+}
+@media only screen and (max-width:576px){
+  .project{
+    height: 40vw;
+  }
+}
