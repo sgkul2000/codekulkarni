@@ -4,9 +4,7 @@ const Handlebars = require("handlebars");
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('index.hbs', {
-    title: 'home'
-  });
+  res.render('index.hbs');
 });
 router.get('/test', (req, res) => {
   res.render('test.hbs', {
