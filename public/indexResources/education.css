@@ -1,0 +1,30 @@
+section#education {
+  color: #fff;
+  background-color: #000;
+  padding-bottom: 5rem;
+}
+
+.educationCard {
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  color: #000;
+}
+
+.instituteName{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.educationIcon{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px){
+  .educationIcon{
+    font-size: 3.5rem;
+  }
+  .instituteName{
+    font-size: 1.4rem;
+  }
+}

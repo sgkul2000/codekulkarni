@@ -1,19 +1,16 @@
 section.experience{
   background-color: #fff;
   color: #000;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 }
 .experienceCard{
-  border-radius: 5px;
-  box-shadow: 0 4px 22px rgba(202, 202, 202, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
   background-color: #000;
   color: #fff;
 }
-.fa-code{
-  font-size: 4rem;
-}
 .position{
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .companyName a small:hover{
@@ -22,4 +19,24 @@ section.experience{
 .companyName a{
   text-decoration: none;
   color: #fff;
+}
+.experienceIcon{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.duration{
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width:768px){
+  .position{
+    font-size: 1.4rem;
+  }
+  .experienceIcon{
+    font-size: 3.5rem;
+  }
+  .duration{
+    font-size: 1rem;
+  }
 }

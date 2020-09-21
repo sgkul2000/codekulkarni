@@ -1,4 +1,4 @@
-.skillName::-moz-selection,  {
+.skillName::-moz-selection {
   /* Code for Firefox */
   color: #000;
   background: #fff;
