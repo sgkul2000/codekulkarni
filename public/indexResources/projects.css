@@ -1,41 +1,63 @@
-
 .css-selector {
-    background: linear-gradient(270deg, #ff8008, #ffc837);
-    background-size: 400% 400%;
+  background: linear-gradient(270deg, #ff8008, #ffc837);
+  background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    -o-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  -o-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @-o-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
 }
 
-
-section.projects{
+section.projects {
   background-color: #fff;
   padding-bottom: 5rem;
 }
-.project{
+.project {
   height: 15vw;
   display: flex;
   align-items: center;
@@ -52,25 +74,28 @@ section.projects{
   background-size: cover;
   margin: auto 1rem;
   transition: background-size 0.5s ease;
--moz-transition: background-size 0.5s ease;
--ms-transition: background-size 0.5s ease;
--o-transition: background-size 0.5s ease;
--webkit-transition: background-size 0.5s ease;
+  -moz-transition: background-size 0.5s ease;
+  -ms-transition: background-size 0.5s ease;
+  -o-transition: background-size 0.5s ease;
+  -webkit-transition: background-size 0.5s ease;
 }
-.project.project1{
+.project.project1 {
   background-image: url('./images/tunein.png');
 }
-.project.project2{
+.project.project2 {
   background-image: url('./images/giflab.png');
 }
-.project.project3{
+.project.project3 {
   background-image: url('./images/passport.png');
 }
-.project .projectInner{
+.project.project4 {
+  background-image: url('https://discord.com/assets/dd4dbc0016779df1378e7812eabaa04d.png');
+}
+.project .projectInner {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,26 +104,30 @@ section.projects{
   transition: all 0.2s ease;
 }
 
-.project .projectInner .innerWrapper{
-  margin: auto  1rem;
+.project .projectInner .innerWrapper {
+  margin: auto 1rem;
 }
-.project .projectInner .innerWrapper .projectTitle{
+.project .projectInner .innerWrapper .projectTitle {
   transform: translateX(300%);
   font-size: 1.3rem;
   transition: all 0.2s ease;
 }
-.project .projectInner .innerWrapper .projectDesc{
+.project .projectInner .innerWrapper .projectDesc {
   transform: translateX(300%);
   font-size: 1rem;
   font-weight: 400;
   transition: all 0.2s ease;
 }
-.project:hover{
+.project:hover {
   /* background-size: auto 120%; */
 }
-.project:hover .projectInner{
+.project:hover .projectInner {
   /* background-color: rgba(0, 0, 0, 0.6); */
-  background: linear-gradient(90deg, rgb(255, 128, 8, 0.9), rgb(255, 200, 55, 0.95));
+  background: linear-gradient(
+    90deg,
+    rgb(255, 128, 8, 0.9),
+    rgb(255, 200, 55, 0.95)
+  );
   background-size: 400% 100%;
 
   /* -webkit-animation: AnimationName 4s ease infinite;
@@ -106,38 +135,41 @@ section.projects{
   -o-animation: AnimationName 4s ease infinite;
   animation: AnimationName 4s ease infinite; */
 }
-.project:hover .projectInner .innerWrapper .projectTitle{
+.project:hover .projectInner .innerWrapper .projectTitle {
   transform: translateX(0);
 }
-.project:hover .projectInner .innerWrapper .projectDesc{
+.project:hover .projectInner .innerWrapper .projectDesc {
   transform: translateX(0);
 }
-.project a{
+.project a {
   height: 100%;
   width: 100%;
   text-decoration: none;
   color: #fff;
 }
-.project a:hover{
+.project a:hover {
   height: 100%;
   width: 100%;
   text-decoration: none;
   color: #fff;
 }
 
-
-@media only screen and (max-width:992px){
-  .project{
-    height:20vw;
+@media only screen and (max-width: 992px) {
+  .project {
+    height: 20vw;
   }
-  .project .projectInner .innerWrapper .projectTitle{
+  .project .projectInner .innerWrapper .projectTitle {
     transform: translateX(0);
   }
-  .project .projectInner .innerWrapper .projectDesc{
+  .project .projectInner .innerWrapper .projectDesc {
     transform: translateX(0);
   }
-  .project .projectInner{
-    background: linear-gradient(270deg, rgb(255, 128, 8, 0.9), rgb(255, 200, 55, 0.9));
+  .project .projectInner {
+    background: linear-gradient(
+      270deg,
+      rgb(255, 128, 8, 0.9),
+      rgb(255, 200, 55, 0.9)
+    );
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 4s ease infinite;
@@ -145,10 +177,9 @@ section.projects{
     -o-animation: AnimationName 4s ease infinite;
     animation: AnimationName 4s ease infinite;
   }
-
 }
-@media only screen and (max-width:576px){
-  .project{
+@media only screen and (max-width: 576px) {
+  .project {
     height: 40vw;
   }
 }

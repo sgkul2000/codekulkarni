@@ -188,6 +188,8 @@ section {
   height: 150%;
 }
 .lContent{
+  /* position: ; */
+  display: flex !important;
   transform: rotateX(0deg);
   perspective: 100px;
 }

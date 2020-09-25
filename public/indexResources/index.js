@@ -106,6 +106,16 @@ $(document).ready(function(){
 
 
 
+//   var ztxt = new Ztextify(".lContent", {
+//     depth: "15px",
+//     perspective: "500px",
+//     layers: 3,
+//     fade: true,
+//     direction: "both",
+//     event: "pointer",
+//     eventRotation: "35deg"
+//  });
+
 
   // const parallax = new ScrollMagic.Scene({
   //   triggerElement:".landingRect",
