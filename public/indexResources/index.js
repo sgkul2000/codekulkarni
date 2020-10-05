@@ -4,17 +4,35 @@ $(document).ready(function () {
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(
       ua
-    )
+    ) &&
+    /Chrome/i.test(ua)
   ) {
+    // $("html").hide()
+    $('#vueMain').addClass('mobile')
     console.log(ua, ' | mobile other')
   } else if (/Chrome/i.test(ua)) {
     console.log(ua, ' | chrome')
     // $("#vueMain").outerHeight($(window).height()-56)
-    $('#vueMain').addClass('mobile')
   } else {
     console.log(ua, ' | desktop other')
   }
-
+  $('#Scroller').click(function () {
+    $('html, body').animate(
+      {
+        scrollTop: $('#profileHeader').offset().top,
+      },
+      1000
+    )
+  })
+  $(".scrollLink").click(function() {
+    console.log($(this).attr('id').slice(0,-4))
+    $('html, body').animate(
+      {
+        scrollTop: $("#"+$(this).attr('id').slice(0,-4)+"Header").offset().top,
+      },
+      1000
+    )
+  })
   $('body').scrollspy({ target: '#navBar', offset: 100 })
   const controller = new ScrollMagic.Controller()
   $('.animationShrinker').each(function () {
@@ -67,8 +85,27 @@ $(document).ready(function () {
   //     .setPin(this)
   //     .addTo(controller)
   // })
-  var tl = gsap.timeline({delay:1});
-  tl.from("#hey", {y: 50, duration: 0.7, opacity:0, ease:"expo"});
-  tl.from(".nameContent", {y: 50, opacity:0, duration: 0.7, stagger:0.1, ease:"expo"});
-  tl.from(".desc", {y:50, opacity: 0, duration: 0.7, ease:"expo"}, "-=0.5");
+  var tl = gsap.timeline({ delay: 1 })
+  tl.from('#hey', { y: 50, duration: 0.7, opacity: 0, ease: 'expo' })
+  tl.from('.nameContent', {
+    y: 50,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.1,
+    ease: 'expo',
+  })
+  tl.from('.desc', { y: 50, opacity: 0, duration: 0.7, ease: 'expo' }, '-=0.5')
+
+  var ztxt = new Ztextify(".socialIconWrapper", {
+    depth: "30px",
+    layers: 8,
+    fade: true,
+    direction: "forwards",
+    event: "pointer",
+    eventRotation: "35deg"
+ });
+
+ $('.socialIconWrapper').click(function(){
+   console.log("helloworld")
+ })
 })

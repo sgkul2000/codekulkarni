@@ -2,24 +2,31 @@
 <script src="/indexResources/index.js" charset="utf-8"></script>
 {{>navbar}}
 <div id="vueMain" class="mainIndexWrapper">
-	<div id="home" class="landing">
+
+
+	<div id="homeHeader" class="landing">
+			<div id="Scroller" class="scroll-downs">
+				<div class="mousey">
+					<div class="scroller"></div>
+				</div>
+			</div>
 		<div class="nLandingRect">
-			{{!-- <img id="nLandingImg" src="/indexResources/images/workspace.jpg" alt="" width="100%"> --}}
-			{{!-- <img class="transBg" src="/indexResources/images/transBg.png" width="500px" alt=""> --}}
 			<img id="dotsSvg1" class="dotsSvg" src="/indexResources/images/dots.svg" alt="">
 			<svg class="blob" id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-				<path fill="#FF8008" d="M60.8,-34.7C71,-17.5,66,8.8,53.3,28.5C40.6,48.3,20.3,61.3,4.7,58.6C-10.8,55.9,-21.7,37.3,-31.4,19.3C-41,1.3,-49.6,-16.1,-44.2,-30.6C-38.7,-45,-19.4,-56.5,3,-58.2C25.3,-60,50.7,-51.9,60.8,-34.7Z" transform="translate(100 100)" />
+				<path fill="#FF8008"
+					d="M60.8,-34.7C71,-17.5,66,8.8,53.3,28.5C40.6,48.3,20.3,61.3,4.7,58.6C-10.8,55.9,-21.7,37.3,-31.4,19.3C-41,1.3,-49.6,-16.1,-44.2,-30.6C-38.7,-45,-19.4,-56.5,3,-58.2C25.3,-60,50.7,-51.9,60.8,-34.7Z"
+					transform="translate(100 100)" />
 			</svg>
 			<img id="lineSvg" src="/indexResources/images/wave.svg" alt="">
 			<div class="landingContent">
-				<div  class="hey" id="hey">Hey<span class="dot">,</span></div><br>
-				<div class="nameContent">I am <span class="name">Shreesh Kulkarni</span><span class="dot">.</span></div><br>
+				<div class="hey" id="hey">Hey<span class="dot">,</span></div>
+				<div class="nameContent">I am <br class="d-md-none"><span class="name">Shreesh Kulkarni</span><span
+						class="dot">.</span></div>
 				<div class="desc">A student at The National Institute of Engineering and Full stack developer.</div>
 			</div>
+
 		</div>
 
-<div class="helloworld"></div>
-		
 	</div>
 	{{>profile}}
 	{{>skills}}
