@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Python",
+    "level": 8
+  },
+  {
+    "name": "C / C++",
+    "level": 6
+  },
+  {
+    "name": "HTML 5 / CSS 3",
+    "level": 9
+  },
+  {
+    "name": "Javascript (ES6)",
+    "level": 8
+  },
+  {
+    "name": "JQuery",
+    "level": 7
+  },
+  {
+    "name": "Node.js / Express.js",
+    "level": 8
+  },
+  {
+    "name": "Vue.js",
+    "level": 8
+  },
+  {
+    "name": "Bootstrap",
+    "level": 9
+  },
+  {
+    "name": "Mongo DB",
+    "level": 7
+  },
+  {
+    "name": "SQL",
+    "level": 5
+  },
+  {
+    "name": "GOLang",
+    "level": 4
+  },
+  {
+    "name": "QUASAR Framework",
+    "level": 7
+  },
+  {
+    "name": "Nuxt.js",
+    "level": 8
+  },
+  {
+    "name": "Django",
+    "level": 5
+  }
+]

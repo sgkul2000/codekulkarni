@@ -3,38 +3,23 @@
 {{>navbar}}
 <div id="vueMain" class="mainIndexWrapper">
 	<div id="home" class="landing">
-		<div class="landingRectBg">
-			{{!-- <video id="videoBg" src="/indexResources/images/galaxyVideo.mp4" autoplay muted loop> --}}
-			{{!-- </video> --}}
-			{{!-- <img src="/indexResources/images/code.jpg" id="bgImg" alt=""> --}}
-		</div>
-		<div class="landingRect">
-			<div class="container-fluid h-100">
-				<div class="row h-100">
-					<div class="col-12 col-md-12 flex-Center h-100">
-						<div class="lContent h-100 flexCenter flex-column text-left">
-							{{!-- <div class="profileImg">
-                <img height="90px" src="/indexResources/images/profile.svg" alt="profile photo">
-              </div> --}}
-							<div class="name w-30 w-md-50">
-								<span>kulkarni</span><span class="dot">.</span><span>shreesh</span>
-							</div>
-							<p class="desc w-30 w-md-50">A Technocrat and a full stack web developer</p>
-						</div>
-					</div>
-				</div>
+		<div class="nLandingRect">
+			{{!-- <img id="nLandingImg" src="/indexResources/images/workspace.jpg" alt="" width="100%"> --}}
+			{{!-- <img class="transBg" src="/indexResources/images/transBg.png" width="500px" alt=""> --}}
+			<img id="dotsSvg1" class="dotsSvg" src="/indexResources/images/dots.svg" alt="">
+			<svg class="blob" id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+				<path fill="#FF8008" d="M60.8,-34.7C71,-17.5,66,8.8,53.3,28.5C40.6,48.3,20.3,61.3,4.7,58.6C-10.8,55.9,-21.7,37.3,-31.4,19.3C-41,1.3,-49.6,-16.1,-44.2,-30.6C-38.7,-45,-19.4,-56.5,3,-58.2C25.3,-60,50.7,-51.9,60.8,-34.7Z" transform="translate(100 100)" />
+			</svg>
+			<img id="lineSvg" src="/indexResources/images/wave.svg" alt="">
+			<div class="landingContent">
+				<div  class="hey" id="hey">Hey<span class="dot">,</span></div><br>
+				<div class="nameContent">I am <span class="name">Shreesh Kulkarni</span><span class="dot">.</span></div><br>
+				<div class="desc">A student at The National Institute of Engineering and Full stack developer.</div>
 			</div>
-			<a href="#profileHeader">
-				<div id="arrowAnchor" class="arrowWrapper">
-					<div class="arrowLeft">
-
-					</div>
-					<div class="arrowRight">
-
-					</div>
-				</div>
-			</a>
 		</div>
+
+<div class="helloworld"></div>
+		
 	</div>
 	{{>profile}}
 	{{>skills}}

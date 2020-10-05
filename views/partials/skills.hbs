@@ -1,194 +1,25 @@
 <link rel="stylesheet" href="/indexResources/skills.css">
-<section id="skills" class="skills">
+<section id="skills" class="skills whiteNavbar">
   <div class="container-fluid">
     <h3 class="sectionHeader whiteText">Skills<span class="dot">.</span></h3>
     <div class="flexCenter">
-      <div class="row skillsWrapper justify-content-md-start">
-        <div class="col-12 col-sm-10 col-md-6 skill">
+      <div class="row skillsWrapper justify-content-md-start justify-content-center">
+        {{#each skills}}
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="col-12 col-sm-10 col-md-6 skill">
           <div class="skillName whiteText">
-            Python
+            {{this.name}}
           </div>
           <div class="progressBar">
-            <div class="animationShrinker" style="width:80%;right:20%;">
-
-            </div>
-            <div class="shrinker" style="width:20%;">
+            <div class="shrinker" style="width:{{skillLevel this.level}}%;">
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            C / C++
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:60%;right:40%;">
-
-            </div>
-            <div class="shrinker" style="width:40%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            HTML 5
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:100%;right:0%;">
-
-            </div>
-            <div class="shrinker" style="width:0%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            CSS 3
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:90%;right:10%;">
-
-            </div>
-            <div class="shrinker" style="width:10%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Javascript (ES6)
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:80%;right:20%;">
-
-            </div>
-            <div class="shrinker" style="width:20%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            JQuery
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:70%;right:30%;">
-
-            </div>
-            <div class="shrinker" style="width:30%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Node.js
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:70%;right:30%;">
-
-            </div>
-            <div class="shrinker" style="width:30%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Django
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:40%;right:60%;">
-
-            </div>
-            <div class="shrinker" style="width:60%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Vue.js
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:80%;right:20%;">
-
-            </div>
-            <div class="shrinker" style="width:20%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Bootstrap
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:90%;right:10%;">
-
-            </div>
-            <div class="shrinker" style="width:10%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            SQL / SQLite
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:60%;right:40%;">
-
-            </div>
-            <div class="shrinker" style="width:40%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Mongo DB
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:80%;right:20%;">
-
-            </div>
-            <div class="shrinker" style="width:20%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            GOLANG
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:40%;right:60%;">
-
-            </div>
-            <div class="shrinker" style="width:60%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            QUASAR Framework
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:60%;right:40%;">
-
-            </div>
-            <div class="shrinker" style="width:40%;">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-10 col-md-6 skill">
-          <div class="skillName whiteText">
-            Nuxt.js
-          </div>
-          <div class="progressBar">
-            <div class="animationShrinker" style="width:50%;right:50%;">
-
-            </div>
-            <div class="shrinker" style="width:50%;">
-            </div>
-          </div>
-        </div>
+        {{/each}}
 
       </div>
     </div>
     <div class="row d-flex align-items-center justify-content-center my-4">
-      <div class="col-10 d-flex align-items-center justify-content-center mt-4">
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="col-10 d-flex align-items-center justify-content-center mt-4">
         <a href="/Shreesh_Kulkarni-Resume.pdf" download="/Shreesh_Kulkarni-Resume.pdf">
           <div class="resumeBtn whiteText">
             <div class="resumeText">

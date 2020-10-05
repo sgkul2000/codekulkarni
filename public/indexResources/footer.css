@@ -18,12 +18,13 @@ section.footer {
 }
 
 .collabCard {
-	background-color: #fff;
+	background-color: #f8f9fb;
 	color: #000;
 	border-radius: 15px;
 	padding: 2rem;
 	margin: auto 0;
 	box-shadow: 0 4px 22px rgba(0, 0, 0, 0.4);
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤝</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 .collabText {
@@ -71,12 +72,13 @@ section.footer {
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋🏻</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 .socialIconWrapper:hover {
 	text-decoration: none;
-	background-color: #fff;
-	border: 1px solid #fff;
+	background-color: #f8f9fb;
+	border: 1px solid #f8f9fb;
 }
 
 .fab, .far, .fas {
