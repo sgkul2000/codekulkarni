@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  if (!navigator.share) {
+    $("#WebShareAPI").remove()
+  }
+  $("#WebShareAPI").click(function() {
+    navigator.share({
+      title: 'Check out Shreesh Kulkarni',
+      text: 'Shreesh Kulkarni - A student at The National Institute of Engineering and a Full Stack Developer.',
+      url: "https://codekulkarni.com"
+    })
+  })
   AOS.init()
   var ua = navigator.userAgent
   if (
