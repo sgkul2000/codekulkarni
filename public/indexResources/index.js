@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  AOS.init()
   var ua = navigator.userAgent
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(
@@ -102,14 +103,14 @@ $(document).ready(function () {
     event: "pointer",
     eventRotation: "35deg"
  });
- $(".aos-fade-in").each(function(){
-   xyz = new ScrollMagic.Scene({
-    triggerElement: this,
-    triggerHook: 1, // move trigger to center of element
-    reverse: true // only do once
-  })
-  .setClassToggle(this, "aos-fade-in-triggered") // add class toggle
-  // .addIndicators() // add indicators (requires plugin)
-  .addTo(controller);
- })
+//  $(".aos-fade-in").each(function(){
+//    xyz = new ScrollMagic.Scene({
+//     triggerElement: this,
+//     triggerHook: 1, // move trigger to center of element
+//     reverse: true // only do once
+//   })
+//   .setClassToggle(this, "aos-fade-in-triggered") // add class toggle
+//   // .addIndicators() // add indicators (requires plugin)
+//   .addTo(controller);
+//  })
 })

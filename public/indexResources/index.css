@@ -4,7 +4,7 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Source Code Pro', monospace; */
 
-.aos-fade-in{
+/* .aos-fade-in{
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.2s ease;
@@ -12,7 +12,7 @@ font-family: 'Source Code Pro', monospace; */
 .aos-fade-in-triggered{
   opacity: 1 !important;
   transform: translateY(0) !important;
-}
+} */
 
 html {
   position: relative;
@@ -20,7 +20,7 @@ html {
       16 0,
     auto;
 }
-html {
+/* html {
   background-color: #f8f9fb;
   overflow-y: hidden;
   width: 100%;
@@ -30,19 +30,11 @@ html {
 body {
   height: 100%;
   position: fixed;
-  /* top: 0.5px; */
-  /* left: 0; */
-  /* right: 0; */
-  /* bottom:0.5px; */
-  /* prevent overscroll bounce*/
   background-color: #f8f9fb;
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  /* iOS velocity scrolling */
-  /* width: 50%; */
-  /* margin-left: 25%; */
-}
+} */
 * {
   scroll-behavior: smooth;
   font-family: 'Roboto Mono', monospace;
@@ -233,7 +225,7 @@ section {
   right: 10%;
   z-index: 100;
 }
-#vueMain.mobile{
+#vueMain.mobile #Scroller{
   top: calc(100vh - 147px);
   
 }
