@@ -74,11 +74,11 @@ section.projects {
   background-position: center;
   background-size: cover;
   margin: auto 1rem;
-  transition: background-size 0.5s ease;
+  /* transition: background-size 0.5s ease, opacity 0.2s ease, transform 0.3s ease;
   -moz-transition: background-size 0.5s ease;
   -ms-transition: background-size 0.5s ease;
   -o-transition: background-size 0.5s ease;
-  -webkit-transition: background-size 0.5s ease;
+  -webkit-transition: background-size 0.5s ease; */
 }
 .project.project1 {
   background-image: url('./images/tunein.png');
@@ -167,16 +167,16 @@ section.projects {
   }
   .project .projectInner {
     background: linear-gradient(
-      270deg,
+      90deg,
       rgb(255, 128, 8, 0.9),
-      rgb(255, 200, 55, 0.9)
+      rgb(255, 200, 55, 0.95)
     );
-    background-size: 400% 400%;
+    background-size: 400% 100%;
 
-    -webkit-animation: AnimationName 4s ease infinite;
+    /* -webkit-animation: AnimationName 4s ease infinite;
     -moz-animation: AnimationName 4s ease infinite;
     -o-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite; */
   }
 }
 @media only screen and (max-width: 576px) {

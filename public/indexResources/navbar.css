@@ -8,10 +8,10 @@
   /* background-color: transparent; */
   padding: 0 !important;
 }
-a.dropdown-item:hover{
+span.dropdown-item:hover{
   background-color: rgba(0,0,0,0.3);
 }
-a.dropdown-item.active{
+span.dropdown-item.active{
   color: #fff;
   background: #FF8008;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */

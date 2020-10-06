@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  AOS.init()
   var ua = navigator.userAgent
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(
@@ -8,6 +7,7 @@ $(document).ready(function () {
     /Chrome/i.test(ua)
   ) {
     // $("html").hide()
+    $('html').addClass('mobile')
     $('#vueMain').addClass('mobile')
     console.log(ua, ' | mobile other')
   } else if (/Chrome/i.test(ua)) {
@@ -20,17 +20,15 @@ $(document).ready(function () {
     $('html, body').animate(
       {
         scrollTop: $('#profileHeader').offset().top,
-      },
-      1000
+      }
     )
   })
   $(".scrollLink").click(function() {
-    console.log($(this).attr('id').slice(0,-4))
     $('html, body').animate(
       {
-        scrollTop: $("#"+$(this).attr('id').slice(0,-4)+"Header").offset().top,
+        scrollTop: $("."+$(this).attr('id').slice(0,-4)+"Header").offset().top,
       },
-      1000
+      100
     )
   })
   $('body').scrollspy({ target: '#navBar', offset: 100 })
@@ -104,8 +102,14 @@ $(document).ready(function () {
     event: "pointer",
     eventRotation: "35deg"
  });
-
- $('.socialIconWrapper').click(function(){
-   console.log("helloworld")
+ $(".aos-fade-in").each(function(){
+   xyz = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook: 1, // move trigger to center of element
+    reverse: true // only do once
+  })
+  .setClassToggle(this, "aos-fade-in-triggered") // add class toggle
+  // .addIndicators() // add indicators (requires plugin)
+  .addTo(controller);
  })
 })

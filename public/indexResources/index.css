@@ -4,16 +4,45 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Source Code Pro', monospace; */
 
-html {
-  position: relative;
-  /* cursor: url("/indexResources/images/mouse.svg"), auto; */
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>☢️</text></svg>")
-      16 0,
-    auto; /*!emojicursor.app*/
-  /* cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto; */
-  /* cursor: "👌🏻", auto; */
+.aos-fade-in{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.2s ease;
+}
+.aos-fade-in-triggered{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
+html {
+  position: relative;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>☢️</text></svg>")
+      16 0,
+    auto;
+}
+html {
+  background-color: #f8f9fb;
+  overflow-y: hidden;
+  width: 100%;
+  overflow-x: visible;
+}
+
+body {
+  height: 100%;
+  position: fixed;
+  /* top: 0.5px; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom:0.5px; */
+  /* prevent overscroll bounce*/
+  background-color: #f8f9fb;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* iOS velocity scrolling */
+  /* width: 50%; */
+  /* margin-left: 25%; */
+}
 * {
   scroll-behavior: smooth;
   font-family: 'Roboto Mono', monospace;
@@ -200,9 +229,13 @@ section {
 #Scroller{
   position: absolute;
   /* top: 15%; */
-  top: calc(100vh - 120px);
+  top: calc(100vh - 91px);
   right: 10%;
   z-index: 100;
+}
+#vueMain.mobile{
+  top: calc(100vh - 147px);
+  
 }
 
 .scroll-downs {
