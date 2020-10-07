@@ -45,10 +45,9 @@ var links = [
         caption: 'An image of Shreesh Kulkarni',
         geoLocation: 'Karnataka, India',
       },
-      '/indexResources/images/tune-in.png',
+      '/indexResources/images/tunein.png',
       '/indexResources/images/giflab.png',
-      '/indexResources/images/passport.png',
-      '/indexResources/images/resume.png',
+      '/indexResources/images/passport.png'
     ],
   },
   { url: '/Shreesh_Kulkarni-Resume.pdf', changefreq: 'monthly', priority: 0.8 },

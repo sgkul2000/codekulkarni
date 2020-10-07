@@ -165,11 +165,15 @@ section {
 .landing {
   margin-top: 71px;
 }
-
+.no-webp .nLandingRect{
+  background-image: url('/indexResources/images/workspace.png');
+}
+.webp .nLandingRect{
+  background-image: url('/indexResources/images/workspace.webp');
+}
 .nLandingRect {
   z-index: -1;
   height: calc(100vh - 71px);
-  background-image: url('/indexResources/images/workspace.jpg');
   display: flex;
   align-items: center;
   justify-content: center;
