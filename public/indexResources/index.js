@@ -44,15 +44,7 @@ $(document).ready(function () {
   })
   $('body').scrollspy({ target: '#navBar', offset: 100 })
   const controller = new ScrollMagic.Controller()
-  $('.animationShrinker').each(function () {
-    var skillScene = new ScrollMagic.Scene({
-      triggerElement: this,
-      triggerHook: 0.9,
-      duration: '20%',
-    })
-      .setTween(gsap.to(this, 0.5, { width: 0 }))
-      .addTo(controller)
-  })
+  
   $('.whiteNavbar').each(function () {
     var skillExitScene = new ScrollMagic.Scene({
       triggerElement: this,
@@ -85,15 +77,7 @@ $(document).ready(function () {
   })
     .setPin('.nLandingRect')
     .addTo(controller)
-  // $("section").each(function(index) {
-  //   console.log(index)
-  //   const parallaxs = new ScrollMagic.Scene({
-  //     triggerElement: this,
-  //     triggerHook: 0.09+(index*0.07),
-  //   })
-  //     .setPin(this)
-  //     .addTo(controller)
-  // })
+
   var tl = gsap.timeline({ delay: 1 })
   tl.from('#hey', { y: 50, duration: 0.7, opacity: 0, ease: 'expo' })
   tl.from('.nameContent', {
@@ -113,14 +97,4 @@ $(document).ready(function () {
     event: "pointer",
     eventRotation: "35deg"
  });
-//  $(".aos-fade-in").each(function(){
-//    xyz = new ScrollMagic.Scene({
-//     triggerElement: this,
-//     triggerHook: 1, // move trigger to center of element
-//     reverse: true // only do once
-//   })
-//   .setClassToggle(this, "aos-fade-in-triggered") // add class toggle
-//   // .addIndicators() // add indicators (requires plugin)
-//   .addTo(controller);
-//  })
 })

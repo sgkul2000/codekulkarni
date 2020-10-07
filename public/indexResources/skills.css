@@ -38,7 +38,7 @@ section.skills {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.shrinker, .animationShrinker {
+.shrinker{
   position: absolute;
   top: 0;
   right: 0;
@@ -46,9 +46,6 @@ section.skills {
   width: 50%;
   z-index: 2;
   background-color: #555;
-}
-.animationShrinker{
-  z-index: 3;
 }
 .resumeBtn {
   height: 3rem;
