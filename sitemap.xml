@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://www.codekulkarni.com/</loc>
-  <lastmod>2020-06-20T07:58:01+00:00</lastmod>
-</url>
-
-
-</urlset>
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"><url><loc>https://www.codekulkarni.com/</loc><changefreq>daily</changefreq><priority>1.0</priority><image:image><image:loc>https://www.codekulkarni.com/indexResources/images/profile.jpg</image:loc><image:caption>An image of Shreesh Kulkarni</image:caption><image:geo_location>Karnataka, India</image:geo_location><image:title>Profile Photo</image:title></image:image><image:image><image:loc>https://www.codekulkarni.com/indexResources/images/tune-in.png</image:loc></image:image><image:image><image:loc>https://www.codekulkarni.com/indexResources/images/giflab.png</image:loc></image:image><image:image><image:loc>https://www.codekulkarni.com/indexResources/images/passport.png</image:loc></image:image><image:image><image:loc>https://www.codekulkarni.com/indexResources/images/resume.png</image:loc></image:image></url><url><loc>https://www.codekulkarni.com/Shreesh_Kulkarni-Resume.pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://www.codekulkarni.com/LOS-sigmatenant.pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url></urlset>
