@@ -5,7 +5,7 @@ name: Lint code
       - main
       - master
 jobs:
-  Lint Code:
+  lintcode:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
