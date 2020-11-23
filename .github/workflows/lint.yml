@@ -1,0 +1,15 @@
+name: Lint code
+'on':
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  Lint Code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Lint ~/src
+        run: npm run lint

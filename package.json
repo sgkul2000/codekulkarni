@@ -1,13 +1,18 @@
 {
-  "name": "handlebars-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "codekulkarni",
+  "version": "2.0.0",
+  "description": "A portfolio website",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint --fix src"
   },
-  "author": "shreesh kulkarni",
+  "author": "Shreesh Kulkarni <sgkul2000@gmail.com> (https://codekulkarni.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgkul2000/codekulkarni"
+  },
   "license": "UNLICENSED",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -19,6 +24,7 @@
     "sitemap": "^6.3.2"
   },
   "devDependencies": {
+    "eslint": "^7.14.0",
     "nodemon": "^2.0.3"
   }
 }
