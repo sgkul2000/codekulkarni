@@ -86,3 +86,11 @@ button.navbar-toggler div.navLinesWrapper div.navLine2{
     opacity:0;
   }
 }
+
+
+.transNav a.navbar-brand:hover{
+  color: rgba(255, 255, 255, 0.8);
+}
+a.navbar-brand:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
