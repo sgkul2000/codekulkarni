@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shreesh Kulkarni - A student at The National Institute of Engineering and a Full Stack Developer."
+    />
+    <title>Shreesh Kulkarni</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="./assets/favicon_io/site.webmanifest" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+    defer
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    defer
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ffac8fc367.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
+    <link rel="stylesheet" href="./assets/indexResources/css/index.css" />
+    <link rel="stylesheet" href="./assets/indexResources/css/education.css" />
+    <link rel="stylesheet" href="./assets/indexResources/css/skills.css" />
+    <link rel="stylesheet" href="./assets/indexResources/css/projects.css" />
+    <link rel="stylesheet" href="./assets/indexResources/css/experience.css" />
+    <link rel="stylesheet" href="./assets/indexResources/css/footer.css" />
+  </head>
+  <body>
+    <div class="htmlWrapper" id="app">
+      <div class="bodyWrapper">
+        <link rel="stylesheet" href="./assets/indexResources/css/navbar.css" />
+        <nav
+          id="navBar"
+          class="navbar fixed-top navbar-expand-lg navbar-light bg-light transNav"
+        >
+          <a class="navbar-brand" href="#"
+            >codekulkarni<span class="dot">.</span></a
+          >
+          <button
+          @click="toggleNavbar"
+            class="navbar-toggler"
+            id="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="navLinesWrapper">
+              <div class="navLine navLine1"></div>
+              <div class="navLine navLine2"></div>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" :class="{'show': navbar}" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <span
+                  class="nav-link scrollLink"
+                  @click="scrollTo('#homeHeader')"
+                  id="homeLink"
+                  >Home <span class="sr-only">(current)</span></span
+                >
+              </li>
+              <li class="nav-item">
+                <span
+                  class="nav-link scrollLink"
+                  @click="scrollTo('#profile')"
+                  id="profileLink"
+                  >Profile</span
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Resume
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <span
+                    class="dropdown-item scrollLink"
+                    @click="scrollTo('#skill')"
+                    id="skillLink"
+                    >Skills</span
+                  >
+                  <span
+                    class="dropdown-item scrollLink"
+                    @click="scrollTo('#project')"
+                    id="projectLink"
+                    >Projects</span
+                  >
+                  <span
+                    class="dropdown-item scrollLink"
+                    @click="scrollTo('#education')"
+                    id="educationLink"
+                    >Education</span
+                  >
+                  <span
+                    class="dropdown-item scrollLink"
+                    @click="scrollTo('#experience')"
+                    id="experienceLink"
+                    >Experience</span
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div id="vueMain" class="mainIndexWrapper">
+          <div id="homeHeader" class="landing">
+            <div
+              id="Scroller"
+              @click="scrollTo('#profileHeader')"
+              class="scroll-downs"
+            >
+              <div class="mousey">
+                <div class="scroller"></div>
+              </div>
+            </div>
+            <div class="nLandingRect">
+              <img
+                id="dotsSvg1"
+                class="dotsSvg"
+                src="./assets/indexResources/images/dots.svg"
+                alt=""
+              />
+              <svg
+                class="blob"
+                id="blob"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#FF8008"
+                  d="M60.8,-34.7C71,-17.5,66,8.8,53.3,28.5C40.6,48.3,20.3,61.3,4.7,58.6C-10.8,55.9,-21.7,37.3,-31.4,19.3C-41,1.3,-49.6,-16.1,-44.2,-30.6C-38.7,-45,-19.4,-56.5,3,-58.2C25.3,-60,50.7,-51.9,60.8,-34.7Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+              <img
+                id="lineSvg"
+                src="./assets/indexResources/images/wave.svg"
+                alt=""
+              />
+              <div class="landingContent">
+                <div class="hey" id="hey">Hey<span class="dot">,</span></div>
+                <div class="nameContent">
+                  I am <br class="d-md-none" /><span class="name"
+                    >Shreesh Kulkarni</span
+                  ><span class="dot">.</span>
+                </div>
+                <div class="desc">
+                  A student at The National Institute of Engineering and Full
+                  stack developer.
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="profile blackNavbar" id="profileHeader">
+            <div class="container-fluid">
+              <h3
+                id="profile"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in sectionHeader blackText"
+              >
+                Profile<span class="dot">.</span>
+              </h3>
+              <div class="row flexCenter profileImg">
+                <div
+                  id="profileImgWrapper"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  class="aos-fade-in"
+                >
+                  <picture height="150">
+                    <source
+                      srcset="./assets/indexResources/images/profile.webp"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./assets/indexResources/images/profile.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      height="150"
+                      src="./assets/indexResources/images/profile.jpg"
+                      alt="Profile images"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="row d-flex flex-row flexCenter flex-wrap">
+                <!--                 
+                <div class="col-12 col-sm-10 col-md-4">
+                  <div class="d-flex flex-column">
+                    <div class="blackText">
+                      <h5 class="mt-4 mb-0">Who am i?</h5>
+                      <div class="aboutMe">
+                        A student at
+                        <a target="_blank" href="https://nie.ac.in/"
+                          >The National Institute of Engineering</a
+                        >
+                        and a web development intern at
+                        <a
+                          class="stRef"
+                          target="_blank"
+                          href="https://w3dev.in/"
+                          >W3dev, New Delhi</a
+                        >
+                      </div>
+                    </div>
+                    <div class="blackText">
+                      <h5 class="mt-4">Details</h5>
+                      <b class="">Name: </b>Shreesh Kulkarni<br />
+                      <b class="">Age: </b>19<br />
+                      <b class="">Location: </b>Belgaum ✈ Mysore<br />
+                    </div>
+                  </div>
+                </div>
+                 -->
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="blackText">
+                    <h5
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="center-bottom"
+                      class="aos-fade-in mt-4"
+                    >
+                      Who am i?
+                    </h5>
+                    <div
+                      id="profileDESC"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="center-bottom"
+                      class="aos-fade-in"
+                    >
+                      That's a good question. I am a self taught web developer who is always eager to learn. I love to contribute to open source projects and collaborate with fellow developers. I love being a part of developer communities like IEEE and DSC.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="skills" class="skills whiteNavbar skillHeader">
+            <div class="container-fluid">
+              <h3
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in sectionHeader whiteText"
+              >
+                Skills<span class="dot">.</span>
+              </h3>
+              <div class="flexCenter">
+                <div
+                  class="row skillsWrapper justify-content-md-start justify-content-center"
+                >
+                  <div
+                    v-for="(skill, index) in skills"
+                    :key="index"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    class="aos-fade-in col-12 col-sm-10 col-md-6 skill"
+                  >
+                    <div class="skillName whiteText">{{skill.name}}</div>
+                    <div class="progressBar">
+                      <div
+                        class="shrinker"
+                        :style="`width:${(10-skill.level) * 10}%;`"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row d-flex align-items-center justify-content-center my-4"
+              >
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                  class="aos-fade-in col-10 d-flex align-items-center justify-content-center mt-4"
+                >
+                  <a
+                    href="./assets/Shreesh_Kulkarni-Resume.pdf"
+                    download="./assets/Shreesh_Kulkarni-Resume.pdf"
+                  >
+                    <div class="resumeBtn whiteText">
+                      <div class="resumeText">Download Resume</div>
+                      <div class="bgChange"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" class="projects blackNavbar projectHeader">
+            <div class="container-fluid">
+              <h3
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in sectionHeader blackText"
+              >
+                Projects<span class="dot">.</span>
+              </h3>
+              <div class="row flexCenter">
+                <div
+                  v-for="(project, index) in projects"
+                  :key="index"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  class="aos-fade-in col-12 project my-2 my-md-0"
+                  @click="window.open(project.deployed ? project.url : project.repo,  '_blank')"
+                >
+                    <div class="projectTitle">{{project.name}} <a :href="project.repo" class="projectRepo">Repo</a> <br /></div>
+                    <div class="projectDesc">{{project.description}}</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" class="education whiteNavbar">
+            <div class="container-fluid">
+              <h3
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in educationHeader sectionHeader whiteText"
+              >
+                education<span class="dot">.</span>
+              </h3>
+              <div class="flexCenter">
+                <div class="flex-column align-items-stretch">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    class="aos-fade-in col-auto my-4 educationCard py-4 px-2 px-sm-4 blackText"
+                  >
+                    <div class="d-flex flex-row">
+                      <div class="my-auto mx-2 mx-md-4 educationIcon">
+                        <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <div
+                        class="d-flex flex-column px-2 px-md-4 flexCenter align-items-baseline"
+                      >
+                        <span class="instituteName"
+                          >Bachelor of Engineering</span
+                        >
+                        <span class="institute"
+                          >The National Institute of engineering  |  2019 -
+                          2023</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="experience" class="experience blackNavbar">
+            <div class="container-fluid">
+              <h3
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in sectionHeader blackText experienceHeader"
+              >
+                Experience<span class="dot">.</span>
+              </h3>
+              <div class="flexCenter">
+                <div class="flex-column align-items-stretch">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    class="aos-fade-in col-auto experienceCard px-1 px-md-3 py-4 my-4"
+                  >
+                    <div class="container-fluid">
+                      <div class="d-flex whiteText flex-row">
+                        <div class="my-auto mx-2 mx-md-4 experienceIcon">
+                          <i class="fab  fa-node-js"></i>
+                        </div>
+                        <div class="d-flex flex-column mx-2 mx-md-4">
+                          <div class="position">Node.js Developer</div>
+                          <div class="companyName">
+                            <a
+                              href="https://learnersdigital.com"
+                              target="_blank"
+                              ><small>@Learners Digital</small></a
+                            >
+                          </div>
+                          <div class="duration">NOVEMBER 2020 - PRESENT</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    class="aos-fade-in col-auto experienceCard px-1 px-md-3 py-4 my-4"
+                  >
+                    <div class="container-fluid">
+                      <div class="d-flex whiteText flex-row">
+                        <div class="my-auto mx-2 mx-md-4 experienceIcon">
+                          <i class="fab fa-vuejs"></i>
+                        </div>
+                        <div class="d-flex flex-column mx-2 mx-md-4">
+                          <div class="position">Vue.js Developer</div>
+                          <div class="companyName">
+                            <a href="https://w3dev.in" target="_blank"
+                              ><small>@W3Dev</small></a
+                            >
+                          </div>
+                          <div class="duration">AUGUST 2020 - OCTOBER 2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    class="aos-fade-in col-auto experienceCard px-1 px-md-3 py-4 my-4"
+                  >
+                    <div class="container-fluid">
+                      <div class="d-flex whiteText flex-row">
+                        <div class="my-auto mx-2 mx-md-4 experienceIcon">
+                          <i class="fas fa-code"></i>
+                        </div>
+                        <div class="d-flex flex-column mx-2 mx-md-4">
+                          <div class="position">Web Development Intern</div>
+                          <div class="companyName">
+                            <a href="https://sigmatenant.com" target="_blank"
+                              ><small>@Sigma Tenant</small></a
+                            >
+                            |
+                            <a
+                              href="./assets/LOS-sigmatenant.pdf"
+                              target="_blank"
+                              ><small>Letter of Recommendation</small></a
+                            >
+                          </div>
+                          <div class="duration">MAY 2020 - JULY 2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" class="footer whiteNavbar">
+            <div class="container-fluid">
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in row collabCardWrapper flexCenter"
+              >
+                <div class="col-12 col-md-8">
+                  <div class="container-fluid">
+                    <div class="row w-100 collabCard">
+                      <div
+                        class="col-12 col-sm-6 collabText d-flex align-items-center justify-content-center"
+                      >
+                        Wanna Collaborate?
+                      </div>
+                      <div class="col-12 col-sm-6 flexCenter">
+                        <a
+                          class="collabBtnAnchor"
+                          href="mailto:sgkul2000@gmail.com"
+                        >
+                          <div class="collabBtn">Let 's do it!</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                class="aos-fade-in sectionHeader footerHeader"
+              >
+                Say hello<span class="dot">!</span>
+              </h3>
+              <div class="row flexCenter">
+                <div class="col-12 col-md-8 py-4 flexCenter">
+                  <div class="d-flex flex-wrap flex-row flexCenter">
+                    <a
+                      target="_blank"
+                      href="https://twitter.com/sgkul2000"
+                      class="socialIconWrapper"
+                      ><img
+                        class="socialIcon twitterIcon"
+                        src="./assets/indexResources/images/twitter.svg"
+                        alt="Twitter Icon"
+                    /></a>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/kulkarni.shreesh/"
+                      class="socialIconWrapper"
+                      ><img
+                        class="socialIcon instagramIcon"
+                        src="./assets/indexResources/images/instagram.svg"
+                        alt="Instagram Icon"
+                    /></a>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/shreesh-k-46370410a/"
+                      class="socialIconWrapper"
+                      ><img
+                        class="socialIcon linkedInIcon"
+                        src="./assets/indexResources/images/linkedin.svg"
+                        alt="LinkedIn Icon"
+                    /></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/sgkul2000"
+                      class="socialIconWrapper"
+                      ><img
+                        class="socialIcon githubIcon"
+                        src="./assets/indexResources/images/github.svg"
+                        alt="Github Icon"
+                    /></a>
+                    <a
+                      target="_blank"
+                      href="mailto:sgkul2000@gmail.com"
+                      class="socialIconWrapper"
+                      ><img
+                        class="socialIcon mailIcon"
+                        src="./assets/indexResources/images/at.svg"
+                        alt="Mail Icon"
+                    /></a>
+                    <div
+                      v-if="!navigator.share"
+                      @click="shareAPI"
+                      class="WebShareAPI socialIconWrapper"
+                      id="WebShareAPI"
+                    >
+                      <img
+                        class="socialIcon shareIcon"
+                        src="./assets/indexResources/images/share.svg"
+                        alt="Share Icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--               
+              <div class="row flexCenter">
+                <div class="col-12 col-md-8 py-4 flexCenter">
+                  <div class="d-flex flex-wrap flex-row flexCenter">
+                    <a
+                      target="_blank"
+                      href="https://twitter.com/sgkul2000"
+                      class="socialIconWrapper"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/kulkarni.shreesh/"
+                      class="socialIconWrapper"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/shreesh-k-46370410a/"
+                      class="socialIconWrapper"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/sgkul2000"
+                      class="socialIconWrapper"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="mailto:sgkul2000@gmail.com"
+                      class="socialIconWrapper"
+                      ><i class="far fa-envelope"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+               -->
+              <div class="row text-center flexCenter px-4">
+                Made with <span class="heart"> 🧡 </span> by Shreesh
+                Kulkarni<span class="dot exclamatory">.</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/indexResources/js/index.js"></script>
+  </body>
+</html>

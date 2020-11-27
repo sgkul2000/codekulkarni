@@ -1,0 +1,37 @@
+[
+    {
+        "name": "shorter",
+        "description": "A URL shortner built with Node.js.",
+        "deployed": true,
+        "url": "https://shorter.codekulkarni.com",
+        "repo": "https://github.com/sgkul2000/shorter"
+    },
+    {
+        "name": "Calender",
+        "description": "Calendar app built with Vue.js and firebase.",
+        "deployed": true,
+        "url": "https://calender.codekulkarni.com",
+        "repo": "https://github.com/sgkul2000/calender"
+    },
+    {
+        "name": "V3 todo",
+        "description": "A todo app built with Vue3's composition api.",
+        "deployed": true,
+        "url": "https://todo.codekulkarni.com",
+        "repo": "https://github.com/sgkul2000/v3-todo"
+    },
+    {
+        "name": "GO-CRUD",
+        "description": "A basic CRUD app built with Golang, gin framework and mongodb.",
+        "deployed": true,
+        "url": "https://go-crud.codekulkarni.com",
+        "repo": "https://github.com/sgkul2000/GO-CRUD"
+    },
+    {
+        "name": "Navneet",
+        "description": "A new tab extension (workaround) for Safari browser",
+        "deployed": true,
+        "url": "https://navneet.codekulkarni.com",
+        "repo": "https://github.com/sgkul2000/navneet"
+    }
+]

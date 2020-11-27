@@ -166,10 +166,10 @@ section {
   margin-top: 71px;
 }
 .no-webp .nLandingRect{
-  background-image: url('/indexResources/images/workspace.png');
+  background-image: url('../images/workspace.jpg');
 }
 .webp .nLandingRect{
-  background-image: url('/indexResources/images/workspace.webp');
+  background-image: url('../images/workspace.webp');
 }
 .nLandingRect {
   z-index: -1;
@@ -412,16 +412,15 @@ section.profile {
   background-color: #f8f9fb;
   padding: 3rem 1rem;
   z-index: -1;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙍🏻‍♂️</text></svg>")
+  /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙍🏻‍♂️</text></svg>")
       16 0,
-    auto; /*!emojicursor.app*/
-  /* z-index: 10; */
+    auto; */
 }
 
 #profileImgWrapper {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙍🏻‍♂️</text></svg>")
+  /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙍🏻‍♂️</text></svg>")
       16 0,
-    auto; /*!emojicursor.app*/
+    auto;  */
   /* border-radius: 50% !important; */
   height: 100px;
   width: 100px;
@@ -448,7 +447,7 @@ div.aboutMe a:hover {
 }
 @media only screen and (max-width: 576px) {
   .sectionHeader {
-    padding: 3rem 0 3rem 0;
+    padding: 2rem 0 2rem 0;
   }
   section {
     padding: 1rem 0;

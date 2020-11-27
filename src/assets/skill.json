@@ -12,7 +12,7 @@
     "level": 9
   },
   {
-    "name": "Javascript (ES6)",
+    "name": "Javascript",
     "level": 8
   },
   {
@@ -33,7 +33,7 @@
   },
   {
     "name": "Mongo DB",
-    "level": 7
+    "level": 8
   },
   {
     "name": "SQL",
@@ -41,7 +41,7 @@
   },
   {
     "name": "GOLang",
-    "level": 4
+    "level": 6
   },
   {
     "name": "QUASAR Framework",
@@ -54,5 +54,13 @@
   {
     "name": "Django",
     "level": 5
+  },
+  {
+    "name": "Flutter",
+    "level": 3
+  },
+  {
+    "name": "React.js",
+    "level": 4
   }
 ]

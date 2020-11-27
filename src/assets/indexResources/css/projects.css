@@ -1,0 +1,72 @@
+.css-selector {
+  background: linear-gradient(270deg, #ff8008, #ffc837);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  -o-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+section.projects {
+  color: #000;
+  background-color: #f8f9fb;
+  padding-bottom: 5rem;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+.project {
+  position: relative;
+  margin: 0rem auto;
+  padding: 0rem 2rem;
+  transition: all 0.2s ease;
+}
+.projectTitle{
+  font-weight: 900;
+  font-size: 2rem;
+}
+.projectDesc{
+  transition: all 0.2s ease;
+}
+.projectRepo{
+  font-size: 0.8rem;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+@media only screen and (min-width:768px) {
+  .project{
+    padding: 1.5rem 5rem
+  }
+  .projectTitle{
+    font-size: 3rem;
+  }
+  .projectRepo{
+    opacity: 0;
+  }
+  .project:hover .projectRepo {
+    opacity: 1;
+  }
+  .projectRepo:hover {
+    text-decoration: underline !important;
+  }
+  .project:hover {
+    transform: translateX(30px) !important;
+  }
+  .project:hover .projectDesc {
+    transform: translateX(10px) !important;
+  }
+  .project:hover .projectDot {
+    opacity: 1;
+  }
+}
+.project>a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+.project>a:hover {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
