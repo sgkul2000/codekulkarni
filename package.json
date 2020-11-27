@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/sitemap.js",
     "dev": "parcel src/index.html",
-    "build": "rm -rf dist/ && parcel build src/index.html && ./post_build_script.sh",
+    "build": "rm -rf dist/ && parcel build src/index.html src/404.html && ./post_build_script.sh",
     "lint": "eslint --fix src"
   },
   "author": "Shreesh Kulkarni <sgkul2000@gmail.com> (https://codekulkarni.com)",
